@@ -22,14 +22,13 @@ public func calcsize(fmt: String) -> Int {
     return 0
 }
 
-public func hex(from data:NSData) -> String {
+public func toHex(from data:NSData) -> String {
     //TODO
     return ""
 }
 
-public func bin(from hexString:String) -> NSData? {
+public func toBin(from hexString:String) -> NSData? {
     let data = NSMutableData(capacity: hexString.characters.count / 2)
-    
     let regex = try! NSRegularExpression(pattern: "[0-9a-f]{1,2}", options: .CaseInsensitive)
     regex.enumerateMatchesInString(hexString, options: [], range: NSMakeRange(0, hexString.characters.count)) { match, flags, stop in
         let byteString = (hexString as NSString).substringWithRange(match!.range)

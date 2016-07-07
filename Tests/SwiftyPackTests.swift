@@ -19,21 +19,17 @@ class SwiftyPackTests: XCTestCase {
         super.tearDown()
     }
     
-    func test_bin() {
+    func test_toBin() {
         let rightData = NSData(bytes: [0xCA, 0xFE] as [UInt8], length: 2)
         
-        let data = SwiftyPack.bin(from: "CAFE")
+        let data = SwiftyPack.toBin(from: "CAFE")
         XCTAssertEqual(data, rightData)
         
-        let data2 = SwiftyPack.bin(from: "cafe")
+        let data2 = SwiftyPack.toBin(from: "cafe")
         XCTAssertEqual(data2, rightData)
         
-        let data3 = SwiftyPack.bin(from: "")
+        let data3 = SwiftyPack.toBin(from: "")
         XCTAssertEqual(data3, NSData())
-
-        //TODO
-//        let data4 = SwiftyPack.bin(from: "kk")
-//        XCTAssertNil(data4)
     }
     
 }
