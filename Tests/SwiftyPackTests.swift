@@ -13,24 +13,27 @@ class SwiftyPackTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    func test_bin() {
+        let rightData = NSData(bytes: [0xCA, 0xFE] as [UInt8], length: 2)
+        
+        let data = SwiftyPack.bin(from: "CAFE")
+        XCTAssertEqual(data, rightData)
+        
+        let data2 = SwiftyPack.bin(from: "cafe")
+        XCTAssertEqual(data2, rightData)
+        
+        let data3 = SwiftyPack.bin(from: "")
+        XCTAssertEqual(data3, NSData())
+
+        //TODO
+//        let data4 = SwiftyPack.bin(from: "kk")
+//        XCTAssertNil(data4)
     }
     
 }
