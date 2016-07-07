@@ -12,6 +12,10 @@
 		F6873B501D2DE7AD002D6B4A /* SwiftyPack.h in Headers */ = {isa = PBXBuildFile; fileRef = F6873B4E1D2DE7AD002D6B4A /* SwiftyPack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6873B531D2DEA16002D6B4A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6873B511D2DEA16002D6B4A /* Info.plist */; };
 		F6873B561D2DEB19002D6B4A /* SwiftyPackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6873B521D2DEA16002D6B4A /* SwiftyPackTests.swift */; };
+		F6873B661D2DEBBD002D6B4A /* SwiftyPack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6873B5C1D2DEBBD002D6B4A /* SwiftyPack.framework */; };
+		F6873B731D2DEC27002D6B4A /* SwiftyPack.h in Headers */ = {isa = PBXBuildFile; fileRef = F6873B4E1D2DE7AD002D6B4A /* SwiftyPack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6873B741D2DEC37002D6B4A /* SwiftyPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6873B4B1D2DE787002D6B4A /* SwiftyPack.swift */; };
+		F6873B751D2DEC61002D6B4A /* SwiftyPackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6873B521D2DEA16002D6B4A /* SwiftyPackTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +24,13 @@
 			containerPortal = F6873B251D2DE6AE002D6B4A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F6873B311D2DE743002D6B4A;
+			remoteInfo = SwiftyPack;
+		};
+		F6873B671D2DEBBD002D6B4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6873B251D2DE6AE002D6B4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6873B5B1D2DEBBD002D6B4A;
 			remoteInfo = SwiftyPack;
 		};
 /* End PBXContainerItemProxy section */
@@ -32,6 +43,8 @@
 		F6873B4E1D2DE7AD002D6B4A /* SwiftyPack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyPack.h; sourceTree = "<group>"; };
 		F6873B511D2DEA16002D6B4A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6873B521D2DEA16002D6B4A /* SwiftyPackTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyPackTests.swift; sourceTree = "<group>"; };
+		F6873B5C1D2DEBBD002D6B4A /* SwiftyPack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyPack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6873B651D2DEBBD002D6B4A /* SwiftyPack macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyPack macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6873B3D1D2DE743002D6B4A /* SwiftyPack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6873B581D2DEBBD002D6B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6873B621D2DEBBD002D6B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6873B661D2DEBBD002D6B4A /* SwiftyPack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +113,8 @@
 			children = (
 				F6873B321D2DE743002D6B4A /* SwiftyPack.framework */,
 				F6873B3C1D2DE743002D6B4A /* SwiftyPack iOS Tests.xctest */,
+				F6873B5C1D2DEBBD002D6B4A /* SwiftyPack.framework */,
+				F6873B651D2DEBBD002D6B4A /* SwiftyPack macOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +144,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6873B501D2DE7AD002D6B4A /* SwiftyPack.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6873B591D2DEBBD002D6B4A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6873B731D2DEC27002D6B4A /* SwiftyPack.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +194,42 @@
 			productReference = F6873B3C1D2DE743002D6B4A /* SwiftyPack iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F6873B5B1D2DEBBD002D6B4A /* SwiftyPack macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6873B6D1D2DEBBD002D6B4A /* Build configuration list for PBXNativeTarget "SwiftyPack macOS" */;
+			buildPhases = (
+				F6873B571D2DEBBD002D6B4A /* Sources */,
+				F6873B581D2DEBBD002D6B4A /* Frameworks */,
+				F6873B591D2DEBBD002D6B4A /* Headers */,
+				F6873B5A1D2DEBBD002D6B4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftyPack macOS";
+			productName = SwiftyPack;
+			productReference = F6873B5C1D2DEBBD002D6B4A /* SwiftyPack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F6873B641D2DEBBD002D6B4A /* SwiftyPack macOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6873B701D2DEBBD002D6B4A /* Build configuration list for PBXNativeTarget "SwiftyPack macOS Tests" */;
+			buildPhases = (
+				F6873B611D2DEBBD002D6B4A /* Sources */,
+				F6873B621D2DEBBD002D6B4A /* Frameworks */,
+				F6873B631D2DEBBD002D6B4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6873B681D2DEBBD002D6B4A /* PBXTargetDependency */,
+			);
+			name = "SwiftyPack macOS Tests";
+			productName = SwiftyPackTests;
+			productReference = F6873B651D2DEBBD002D6B4A /* SwiftyPack macOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,6 +243,12 @@
 						CreatedOnToolsVersion = 7.3;
 					};
 					F6873B3B1D2DE743002D6B4A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					F6873B5B1D2DEBBD002D6B4A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					F6873B641D2DEBBD002D6B4A = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -187,6 +267,8 @@
 			targets = (
 				F6873B311D2DE743002D6B4A /* SwiftyPack iOS */,
 				F6873B3B1D2DE743002D6B4A /* SwiftyPack iOS Tests */,
+				F6873B5B1D2DEBBD002D6B4A /* SwiftyPack macOS */,
+				F6873B641D2DEBBD002D6B4A /* SwiftyPack macOS Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +283,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F6873B3A1D2DE743002D6B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6873B5A1D2DEBBD002D6B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6873B631D2DEBBD002D6B4A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -226,6 +322,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6873B571D2DEBBD002D6B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6873B741D2DEC37002D6B4A /* SwiftyPack.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6873B611D2DEBBD002D6B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6873B751D2DEC61002D6B4A /* SwiftyPackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -233,6 +345,11 @@
 			isa = PBXTargetDependency;
 			target = F6873B311D2DE743002D6B4A /* SwiftyPack iOS */;
 			targetProxy = F6873B3E1D2DE743002D6B4A /* PBXContainerItemProxy */;
+		};
+		F6873B681D2DEBBD002D6B4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6873B5B1D2DEBBD002D6B4A /* SwiftyPack macOS */;
+			targetProxy = F6873B671D2DEBBD002D6B4A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -453,6 +570,212 @@
 			};
 			name = Release;
 		};
+		F6873B6E1D2DEBBD002D6B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftpack.SwiftyPack;
+				PRODUCT_NAME = SwiftyPack;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F6873B6F1D2DEBBD002D6B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftpack.SwiftyPack;
+				PRODUCT_NAME = SwiftyPack;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6873B711D2DEBBD002D6B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftpack.SwiftyPackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6873B721D2DEBBD002D6B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftpack.SwiftyPackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -478,6 +801,22 @@
 			buildConfigurations = (
 				F6873B481D2DE743002D6B4A /* Debug */,
 				F6873B491D2DE743002D6B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6873B6D1D2DEBBD002D6B4A /* Build configuration list for PBXNativeTarget "SwiftyPack macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6873B6E1D2DEBBD002D6B4A /* Debug */,
+				F6873B6F1D2DEBBD002D6B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6873B701D2DEBBD002D6B4A /* Build configuration list for PBXNativeTarget "SwiftyPack macOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6873B711D2DEBBD002D6B4A /* Debug */,
+				F6873B721D2DEBBD002D6B4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
