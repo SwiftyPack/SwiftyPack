@@ -10,7 +10,23 @@
 		F6873B241D2DE6AE002D6B4A = {
 			isa = PBXGroup;
 			children = (
+				F6873B2B1D2DE6E3002D6B4A /* Source */,
+				F6873B2C1D2DE6E3002D6B4A /* Tests */,
 			);
+			sourceTree = "<group>";
+		};
+		F6873B2B1D2DE6E3002D6B4A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F6873B2C1D2DE6E3002D6B4A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
