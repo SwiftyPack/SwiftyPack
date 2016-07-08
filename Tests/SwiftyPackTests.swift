@@ -32,4 +32,13 @@ class SwiftyPackTests: XCTestCase {
         XCTAssertEqual(data3, NSData())
     }
     
+    func test_toHex() {
+        let rightHex = "cafe"
+        let hex = SwiftyPack.toHex(from: NSData(bytes: [0xCA, 0xFE] as [UInt8], length: 2))
+        XCTAssertEqual(hex, rightHex)
+        
+        let hex1 = SwiftyPack.toHex(from: NSData(bytes: [0xCA, 0xEE] as [UInt8], length: 2))
+        XCTAssertEqual(hex1, "caee")
+    }
+    
 }

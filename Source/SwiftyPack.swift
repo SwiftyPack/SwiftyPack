@@ -22,9 +22,17 @@ public func calcsize(fmt: String) -> Int {
     return 0
 }
 
-public func toHex(from data:NSData) -> String {
-    //TODO
-    return ""
+public func toHex(from data:NSData) -> String? {
+    let buffer = UnsafePointer<UInt8>(data.bytes)
+    if buffer == nil {
+        return nil
+    }
+    
+    var hexadecimalString = ""
+    for i in 0..<data.length {
+        hexadecimalString += String(format: "%02x", buffer.advancedBy(i).memory)
+    }
+    return hexadecimalString
 }
 
 public func toBin(from hexString:String) -> NSData? {
